@@ -19,7 +19,7 @@ jobs:
       with:
        registry: registry-1.docker.io
        username: ${{ env.DOCKERHUBUSERNAME }}
-       password: ${{secrets.DOCKERHUBPASSWORD}}
+       password: ${{env.DOCKERHUBPASSWORD}}
   Logintodockerhubtest:
     runs-on: ubuntu-latest
     environment: test
